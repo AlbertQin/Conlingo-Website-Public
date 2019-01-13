@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Conlingo - Client Control Panel</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via  -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ccID="1278">
+
+    <div ccID="1292" id="wrapper">
+
+        <!-- Navigation -->
+        <nav ccID="1351" class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div ccID="1461" class="navbar-header">
+                <button ccID="1506" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span ccID="1626" class="sr-only">Toggle navigation</span>
+                    <span ccID="1694" class="icon-bar"></span>
+                    <span ccID="1746" class="icon-bar"></span>
+                    <span ccID="1798" class="icon-bar"></span>
+                </button>
+                <a ccID="1873" class="navbar-brand" href="index.html">Conlingo Client Control Panel</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul ccID="2022" class="nav navbar-top-links navbar-right">
+               
+               
+                <!-- /.dropdown -->
+                <li ccID="2157" class="dropdown">
+                    <a ccID="2200" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i ccID="2285" class="fa fa-bell fa-fw"></i> <i ccID="2318" class="fa fa-caret-down"></i>
+                    </a>
+                    <ul ccID="2398" class="dropdown-menu dropdown-alerts">
+                        <li ccID="2466">
+                            <a ccID="2500" href="#">
+                                <div ccID="2546">
+                                    <i ccID="2589" class="fa fa-comment fa-fw"></i> New Comment
+                                    <span ccID="2674" class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li ccID="2867" class="divider"></li>
+                        <li ccID="2918">
+                            <a ccID="2952" href="#">
+                                <div ccID="2998">
+                                    <i ccID="3041" class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span ccID="3130" class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li ccID="3324" class="divider"></li>
+                        <li ccID="3375">
+                            <a ccID="3409" href="#">
+                                <div ccID="3455">
+                                    <i ccID="3498" class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span ccID="3585" class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li ccID="3778" class="divider"></li>
+                        <li ccID="3829">
+                            <a ccID="3863" href="#">
+                                <div ccID="3909">
+                                    <i ccID="3952" class="fa fa-tasks fa-fw"></i> New Task
+                                    <span ccID="4032" class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li ccID="4225" class="divider"></li>
+                        <li ccID="4276">
+                            <a ccID="4310" href="#">
+                                <div ccID="4356">
+                                    <i ccID="4399" class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span ccID="4487" class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li ccID="4680" class="divider"></li>
+                        <li ccID="4731">
+                            <a ccID="4765" class="text-center" href="#">
+                                <strong ccID="4831">See All Alerts</strong>
+                                <i ccID="4896" class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li ccID="5147" class="dropdown">
+                    <a ccID="5190" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i ccID="5275" class="fa fa-user fa-fw"></i> <i ccID="5308" class="fa fa-caret-down"></i>
+                    </a>
+                    <ul ccID="5388" class="dropdown-menu dropdown-user">
+                        <li ccID="5454"><a ccID="5458" href="#"><i ccID="5470" class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li ccID="5576"><a ccID="5580" href="#"><i ccID="5592" class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li ccID="5694" class="divider"></li>
+                        <li ccID="5745"><a ccID="5749" href="login.html"><i ccID="5770" class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div ccID="6057" class="navbar-default sidebar" role="navigation">
+                <div ccID="6129" class="sidebar-nav navbar-collapse">
+                    <ul ccID="6192" class="nav" id="side-menu">
+                        <li ccID="6249">
+                            <a ccID="6283" href="index.html"><i ccID="6304" class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        
+                        <li ccID="6438">
+                            <a ccID="6472" href="tasks.html"><i ccID="6493" class="fa fa-table fa-fw"></i> Tasks</a>
+                        </li>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div ccID="6638" id="page-wrapper">
+            
+            <div ccID="6689" class="row">
+                <div ccID="6724" class="col-lg-12">
+                    <h1 ccID="6769" class="page-header">Tasks</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div ccID="6927" class="row">
+                <div ccID="6962" class="col-lg-12">
+                    <div ccID="7007" class="panel panel-default">
+                        <div ccID="7066" class="panel-heading">
+                 <div ccID="7112" style="display: inline" ><div ccID="7142" align="right">Create New Task 	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;<button ccID="7310" type="button" class="btn btn-success">New</button> </div></div>
+                        </div>
+						
+                        <!-- /.panel-heading -->
+                        <div ccID="7497" class="panel-body">
+                            <table ccID="7551" width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <thead ccID="7684">
+                                    <tr ccID="7729">
+                                        <th ccID="7775">Rendering engine</th>
+                                        <th ccID="7842">Browser</th>
+                                        <th ccID="7900">Platform(s)</th>
+                                        <th ccID="7962">Engine version</th>
+                                        <th ccID="8027">CSS grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody ccID="8164">
+                                    <tr ccID="8209" class="odd gradeX">
+                                        <td ccID="8274">Trident</td>
+                                        <td ccID="8332">Internet Explorer 4.0</td>
+                                        <td ccID="8404">Win 95+</td>
+                                        <td ccID="8462" class="center">4</td>
+                                        <td ccID="8529" class="center">X</td>
+                                    </tr>
+                                    <tr ccID="8635" class="even gradeC">
+                                        <td ccID="8701">Trident</td>
+                                        <td ccID="8759">Internet Explorer 5.0</td>
+                                        <td ccID="8831">Win 95+</td>
+                                        <td ccID="8889" class="center">5</td>
+                                        <td ccID="8956" class="center">C</td>
+                                    </tr>
+                                    <tr ccID="9062" class="odd gradeA">
+                                        <td ccID="9127">Trident</td>
+                                        <td ccID="9185">Internet Explorer 5.5</td>
+                                        <td ccID="9257">Win 95+</td>
+                                        <td ccID="9315" class="center">5.5</td>
+                                        <td ccID="9384" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="9490" class="even gradeA">
+                                        <td ccID="9556">Trident</td>
+                                        <td ccID="9614">Internet Explorer 6</td>
+                                        <td ccID="9684">Win 98+</td>
+                                        <td ccID="9742" class="center">6</td>
+                                        <td ccID="9809" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="9915" class="odd gradeA">
+                                        <td ccID="9980">Trident</td>
+                                        <td ccID="10038">Internet Explorer 7</td>
+                                        <td ccID="10108">Win XP SP2+</td>
+                                        <td ccID="10170" class="center">7</td>
+                                        <td ccID="10237" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="10343" class="even gradeA">
+                                        <td ccID="10409">Trident</td>
+                                        <td ccID="10467">AOL browser (AOL desktop)</td>
+                                        <td ccID="10543">Win XP</td>
+                                        <td ccID="10600" class="center">6</td>
+                                        <td ccID="10667" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="10773" class="gradeA">
+                                        <td ccID="10834">Gecko</td>
+                                        <td ccID="10890">Firefox 1.0</td>
+                                        <td ccID="10952">Win 98+ / OSX.2+</td>
+                                        <td ccID="11019" class="center">1.7</td>
+                                        <td ccID="11088" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="11194" class="gradeA">
+                                        <td ccID="11255">Gecko</td>
+                                        <td ccID="11311">Firefox 1.5</td>
+                                        <td ccID="11373">Win 98+ / OSX.2+</td>
+                                        <td ccID="11440" class="center">1.8</td>
+                                        <td ccID="11509" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="11615" class="gradeA">
+                                        <td ccID="11676">Gecko</td>
+                                        <td ccID="11732">Firefox 2.0</td>
+                                        <td ccID="11794">Win 98+ / OSX.2+</td>
+                                        <td ccID="11861" class="center">1.8</td>
+                                        <td ccID="11930" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="12036" class="gradeA">
+                                        <td ccID="12097">Gecko</td>
+                                        <td ccID="12153">Firefox 3.0</td>
+                                        <td ccID="12215">Win 2k+ / OSX.3+</td>
+                                        <td ccID="12282" class="center">1.9</td>
+                                        <td ccID="12351" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="12457" class="gradeA">
+                                        <td ccID="12518">Gecko</td>
+                                        <td ccID="12574">Camino 1.0</td>
+                                        <td ccID="12635">OSX.2+</td>
+                                        <td ccID="12692" class="center">1.8</td>
+                                        <td ccID="12761" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="12867" class="gradeA">
+                                        <td ccID="12928">Gecko</td>
+                                        <td ccID="12984">Camino 1.5</td>
+                                        <td ccID="13045">OSX.3+</td>
+                                        <td ccID="13102" class="center">1.8</td>
+                                        <td ccID="13171" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="13277" class="gradeA">
+                                        <td ccID="13338">Gecko</td>
+                                        <td ccID="13394">Netscape 7.2</td>
+                                        <td ccID="13457">Win 95+ / Mac OS 8.6-9.2</td>
+                                        <td ccID="13532" class="center">1.7</td>
+                                        <td ccID="13601" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="13707" class="gradeA">
+                                        <td ccID="13768">Gecko</td>
+                                        <td ccID="13824">Netscape Browser 8</td>
+                                        <td ccID="13893">Win 98SE+</td>
+                                        <td ccID="13953" class="center">1.7</td>
+                                        <td ccID="14022" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="14128" class="gradeA">
+                                        <td ccID="14189">Gecko</td>
+                                        <td ccID="14245">Netscape Navigator 9</td>
+                                        <td ccID="14316">Win 98+ / OSX.2+</td>
+                                        <td ccID="14383" class="center">1.8</td>
+                                        <td ccID="14452" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="14558" class="gradeA">
+                                        <td ccID="14619">Gecko</td>
+                                        <td ccID="14675">Mozilla 1.0</td>
+                                        <td ccID="14737">Win 95+ / OSX.1+</td>
+                                        <td ccID="14804" class="center">1</td>
+                                        <td ccID="14871" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="14977" class="gradeA">
+                                        <td ccID="15038">Gecko</td>
+                                        <td ccID="15094">Mozilla 1.1</td>
+                                        <td ccID="15156">Win 95+ / OSX.1+</td>
+                                        <td ccID="15223" class="center">1.1</td>
+                                        <td ccID="15292" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="15398" class="gradeA">
+                                        <td ccID="15459">Gecko</td>
+                                        <td ccID="15515">Mozilla 1.2</td>
+                                        <td ccID="15577">Win 95+ / OSX.1+</td>
+                                        <td ccID="15644" class="center">1.2</td>
+                                        <td ccID="15713" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="15819" class="gradeA">
+                                        <td ccID="15880">Gecko</td>
+                                        <td ccID="15936">Mozilla 1.3</td>
+                                        <td ccID="15998">Win 95+ / OSX.1+</td>
+                                        <td ccID="16065" class="center">1.3</td>
+                                        <td ccID="16134" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="16240" class="gradeA">
+                                        <td ccID="16301">Gecko</td>
+                                        <td ccID="16357">Mozilla 1.4</td>
+                                        <td ccID="16419">Win 95+ / OSX.1+</td>
+                                        <td ccID="16486" class="center">1.4</td>
+                                        <td ccID="16555" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="16661" class="gradeA">
+                                        <td ccID="16722">Gecko</td>
+                                        <td ccID="16778">Mozilla 1.5</td>
+                                        <td ccID="16840">Win 95+ / OSX.1+</td>
+                                        <td ccID="16907" class="center">1.5</td>
+                                        <td ccID="16976" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="17082" class="gradeA">
+                                        <td ccID="17143">Gecko</td>
+                                        <td ccID="17199">Mozilla 1.6</td>
+                                        <td ccID="17261">Win 95+ / OSX.1+</td>
+                                        <td ccID="17328" class="center">1.6</td>
+                                        <td ccID="17397" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="17503" class="gradeA">
+                                        <td ccID="17564">Gecko</td>
+                                        <td ccID="17620">Mozilla 1.7</td>
+                                        <td ccID="17682">Win 98+ / OSX.1+</td>
+                                        <td ccID="17749" class="center">1.7</td>
+                                        <td ccID="17818" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="17924" class="gradeA">
+                                        <td ccID="17985">Gecko</td>
+                                        <td ccID="18041">Mozilla 1.8</td>
+                                        <td ccID="18103">Win 98+ / OSX.1+</td>
+                                        <td ccID="18170" class="center">1.8</td>
+                                        <td ccID="18239" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="18345" class="gradeA">
+                                        <td ccID="18406">Gecko</td>
+                                        <td ccID="18462">Seamonkey 1.1</td>
+                                        <td ccID="18526">Win 98+ / OSX.2+</td>
+                                        <td ccID="18593" class="center">1.8</td>
+                                        <td ccID="18662" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="18768" class="gradeA">
+                                        <td ccID="18829">Gecko</td>
+                                        <td ccID="18885">Epiphany 2.20</td>
+                                        <td ccID="18949">Gnome</td>
+                                        <td ccID="19005" class="center">1.8</td>
+                                        <td ccID="19074" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="19180" class="gradeA">
+                                        <td ccID="19241">Webkit</td>
+                                        <td ccID="19298">Safari 1.2</td>
+                                        <td ccID="19359">OSX.3</td>
+                                        <td ccID="19415" class="center">125.5</td>
+                                        <td ccID="19486" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="19592" class="gradeA">
+                                        <td ccID="19653">Webkit</td>
+                                        <td ccID="19710">Safari 1.3</td>
+                                        <td ccID="19771">OSX.3</td>
+                                        <td ccID="19827" class="center">312.8</td>
+                                        <td ccID="19898" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="20004" class="gradeA">
+                                        <td ccID="20065">Webkit</td>
+                                        <td ccID="20122">Safari 2.0</td>
+                                        <td ccID="20183">OSX.4+</td>
+                                        <td ccID="20240" class="center">419.3</td>
+                                        <td ccID="20311" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="20417" class="gradeA">
+                                        <td ccID="20478">Webkit</td>
+                                        <td ccID="20535">Safari 3.0</td>
+                                        <td ccID="20596">OSX.4+</td>
+                                        <td ccID="20653" class="center">522.1</td>
+                                        <td ccID="20724" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="20830" class="gradeA">
+                                        <td ccID="20891">Webkit</td>
+                                        <td ccID="20948">OmniWeb 5.5</td>
+                                        <td ccID="21010">OSX.4+</td>
+                                        <td ccID="21067" class="center">420</td>
+                                        <td ccID="21136" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="21242" class="gradeA">
+                                        <td ccID="21303">Webkit</td>
+                                        <td ccID="21360">iPod Touch / iPhone</td>
+                                        <td ccID="21430">iPod</td>
+                                        <td ccID="21485" class="center">420.1</td>
+                                        <td ccID="21556" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="21662" class="gradeA">
+                                        <td ccID="21723">Webkit</td>
+                                        <td ccID="21780">S60</td>
+                                        <td ccID="21834">S60</td>
+                                        <td ccID="21888" class="center">413</td>
+                                        <td ccID="21957" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="22063" class="gradeA">
+                                        <td ccID="22124">Presto</td>
+                                        <td ccID="22181">Opera 7.0</td>
+                                        <td ccID="22241">Win 95+ / OSX.1+</td>
+                                        <td ccID="22308" class="center">-</td>
+                                        <td ccID="22375" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="22481" class="gradeA">
+                                        <td ccID="22542">Presto</td>
+                                        <td ccID="22599">Opera 7.5</td>
+                                        <td ccID="22659">Win 95+ / OSX.2+</td>
+                                        <td ccID="22726" class="center">-</td>
+                                        <td ccID="22793" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="22899" class="gradeA">
+                                        <td ccID="22960">Presto</td>
+                                        <td ccID="23017">Opera 8.0</td>
+                                        <td ccID="23077">Win 95+ / OSX.2+</td>
+                                        <td ccID="23144" class="center">-</td>
+                                        <td ccID="23211" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="23317" class="gradeA">
+                                        <td ccID="23378">Presto</td>
+                                        <td ccID="23435">Opera 8.5</td>
+                                        <td ccID="23495">Win 95+ / OSX.2+</td>
+                                        <td ccID="23562" class="center">-</td>
+                                        <td ccID="23629" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="23735" class="gradeA">
+                                        <td ccID="23796">Presto</td>
+                                        <td ccID="23853">Opera 9.0</td>
+                                        <td ccID="23913">Win 95+ / OSX.3+</td>
+                                        <td ccID="23980" class="center">-</td>
+                                        <td ccID="24047" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="24153" class="gradeA">
+                                        <td ccID="24214">Presto</td>
+                                        <td ccID="24271">Opera 9.2</td>
+                                        <td ccID="24331">Win 88+ / OSX.3+</td>
+                                        <td ccID="24398" class="center">-</td>
+                                        <td ccID="24465" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="24571" class="gradeA">
+                                        <td ccID="24632">Presto</td>
+                                        <td ccID="24689">Opera 9.5</td>
+                                        <td ccID="24749">Win 88+ / OSX.3+</td>
+                                        <td ccID="24816" class="center">-</td>
+                                        <td ccID="24883" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="24989" class="gradeA">
+                                        <td ccID="25050">Presto</td>
+                                        <td ccID="25107">Opera for Wii</td>
+                                        <td ccID="25171">Wii</td>
+                                        <td ccID="25225" class="center">-</td>
+                                        <td ccID="25292" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="25398" class="gradeA">
+                                        <td ccID="25459">Presto</td>
+                                        <td ccID="25516">Nokia N800</td>
+                                        <td ccID="25577">N800</td>
+                                        <td ccID="25632" class="center">-</td>
+                                        <td ccID="25699" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="25805" class="gradeA">
+                                        <td ccID="25866">Presto</td>
+                                        <td ccID="25923">Nintendo DS browser</td>
+                                        <td ccID="25993">Nintendo DS</td>
+                                        <td ccID="26055" class="center">8.5</td>
+                                        <td ccID="26124" class="center">C/A<sup ccID="26146">1</sup>
+                                        </td>
+                                    </tr>
+                                    <tr ccID="26286" class="gradeC">
+                                        <td ccID="26347">KHTML</td>
+                                        <td ccID="26403">Konqureror 3.1</td>
+                                        <td ccID="26468">KDE 3.1</td>
+                                        <td ccID="26526" class="center">3.1</td>
+                                        <td ccID="26595" class="center">C</td>
+                                    </tr>
+                                    <tr ccID="26701" class="gradeA">
+                                        <td ccID="26762">KHTML</td>
+                                        <td ccID="26818">Konqureror 3.3</td>
+                                        <td ccID="26883">KDE 3.3</td>
+                                        <td ccID="26941" class="center">3.3</td>
+                                        <td ccID="27010" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="27116" class="gradeA">
+                                        <td ccID="27177">KHTML</td>
+                                        <td ccID="27233">Konqureror 3.5</td>
+                                        <td ccID="27298">KDE 3.5</td>
+                                        <td ccID="27356" class="center">3.5</td>
+                                        <td ccID="27425" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="27531" class="gradeX">
+                                        <td ccID="27592">Tasman</td>
+                                        <td ccID="27649">Internet Explorer 4.5</td>
+                                        <td ccID="27721">Mac OS 8-9</td>
+                                        <td ccID="27782" class="center">-</td>
+                                        <td ccID="27849" class="center">X</td>
+                                    </tr>
+                                    <tr ccID="27955" class="gradeC">
+                                        <td ccID="28016">Tasman</td>
+                                        <td ccID="28073">Internet Explorer 5.1</td>
+                                        <td ccID="28145">Mac OS 7.6-9</td>
+                                        <td ccID="28208" class="center">1</td>
+                                        <td ccID="28275" class="center">C</td>
+                                    </tr>
+                                    <tr ccID="28381" class="gradeC">
+                                        <td ccID="28442">Tasman</td>
+                                        <td ccID="28499">Internet Explorer 5.2</td>
+                                        <td ccID="28571">Mac OS 8-X</td>
+                                        <td ccID="28632" class="center">1</td>
+                                        <td ccID="28699" class="center">C</td>
+                                    </tr>
+                                    <tr ccID="28805" class="gradeA">
+                                        <td ccID="28866">Misc</td>
+                                        <td ccID="28921">NetFront 3.1</td>
+                                        <td ccID="28984">Embedded devices</td>
+                                        <td ccID="29051" class="center">-</td>
+                                        <td ccID="29118" class="center">C</td>
+                                    </tr>
+                                    <tr ccID="29224" class="gradeA">
+                                        <td ccID="29285">Misc</td>
+                                        <td ccID="29340">NetFront 3.4</td>
+                                        <td ccID="29403">Embedded devices</td>
+                                        <td ccID="29470" class="center">-</td>
+                                        <td ccID="29537" class="center">A</td>
+                                    </tr>
+                                    <tr ccID="29643" class="gradeX">
+                                        <td ccID="29704">Misc</td>
+                                        <td ccID="29759">Dillo 0.8</td>
+                                        <td ccID="29819">Embedded devices</td>
+                                        <td ccID="29886" class="center">-</td>
+                                        <td ccID="29953" class="center">X</td>
+                                    </tr>
+                                    <tr ccID="30059" class="gradeX">
+                                        <td ccID="30120">Misc</td>
+                                        <td ccID="30175">Links</td>
+                                        <td ccID="30231">Text only</td>
+                                        <td ccID="30291" class="center">-</td>
+                                        <td ccID="30358" class="center">X</td>
+                                    </tr>
+                                    <tr ccID="30464" class="gradeX">
+                                        <td ccID="30525">Misc</td>
+                                        <td ccID="30580">Lynx</td>
+                                        <td ccID="30635">Text only</td>
+                                        <td ccID="30695" class="center">-</td>
+                                        <td ccID="30762" class="center">X</td>
+                                    </tr>
+                                    <tr ccID="30868" class="gradeC">
+                                        <td ccID="30929">Misc</td>
+                                        <td ccID="30984">IE Mobile</td>
+                                        <td ccID="31044">Windows Mobile 6</td>
+                                        <td ccID="31111" class="center">-</td>
+                                        <td ccID="31178" class="center">C</td>
+                                    </tr>
+                                    <tr ccID="31284" class="gradeC">
+                                        <td ccID="31345">Misc</td>
+                                        <td ccID="31400">PSP browser</td>
+                                        <td ccID="31462">PSP</td>
+                                        <td ccID="31516" class="center">-</td>
+                                        <td ccID="31583" class="center">C</td>
+                                    </tr>
+                                    <tr ccID="31689" class="gradeU">
+                                        <td ccID="31750">Other browsers</td>
+                                        <td ccID="31815">All others</td>
+                                        <td ccID="31876">-</td>
+                                        <td ccID="31928" class="center">-</td>
+                                        <td ccID="31995" class="center">U</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script ccID="32494" src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script ccID="32596" src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script ccID="32710" src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script ccID="32814" src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script ccID="32892" src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script ccID="32978" src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script ccID="33104" src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script ccID="33227">
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+            responsive: true
+        });
+    });
+    </script>
+
+</body>
+
+</html>
